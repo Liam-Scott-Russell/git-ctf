@@ -1,0 +1,41 @@
+name: Challenge 10 Send Flag via Email
+on:
+  pull_request:
+    branches: [ 'challenge/10' ]
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v2
+
+    - name: Read email.txt
+      id: email
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: ./email.txt
+
+    - name: Echo email address
+      run: echo "${{ steps.email.outputs.content }}"
+
+    - name: Send email
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.MAIL_USERNAME }}
+        password: ${{ secrets.MAIL_PASSWORD }}
+        subject: DEVS CTF Challenge 10 Flag
+        to: ${{ steps.email.outputs.content }}
+        from: DEVS Git CTF
+        secure: true
+        body: ${{ secrets.CHALLENGE_10_FLAG }}
+        ignore_cert: true
+        priority: high
+
+    - name: Comment on PR
+      uses: harupy/comment-on-pr@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: template.md

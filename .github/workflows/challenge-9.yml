@@ -6,6 +6,12 @@ jobs:
   send-email:
     runs-on: ubuntu-latest
     steps:
+    - name: Check commit message
+      uses: gsactions/commit-message-checker@v1
+      with:
+        pattern: '^(Hello, world)$'
+        error: 'Your commit message is incorrect :('
+
     - name: Git checkout
       uses: actions/checkout@v2
 

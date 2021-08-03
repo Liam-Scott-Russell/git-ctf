@@ -1,0 +1,31 @@
+name: Challenge 9 Send Flag via Email
+on:
+  push:
+    branches: [ '[a-z][a-z][a-z][a-z][0-9][0-9][0-9]' ] # matches a UoA UPI 
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Read email.txt
+      id: email
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: ./email.txt
+
+    - name: Echo email address
+      run: echo "${{ steps.email.outputs.content }}"
+
+    - name: Send email
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
+        subject: DEVS CTF Challenge 9 Flag
+        to: ${{ steps.email.outputs.content }}
+        from: DEVS Git CTF
+        secure: true
+        body: ${{secrests.CHALLENGE_9_FLAG}}
+        ignore_cert: true
+        priority: high

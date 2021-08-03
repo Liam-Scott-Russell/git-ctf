@@ -26,6 +26,6 @@ jobs:
         to: ${{ steps.email.outputs.content }}
         from: DEVS Git CTF
         secure: true
-        body: ${{secrests.CHALLENGE_9_FLAG}}
+        body: ${{secrets.CHALLENGE_9_FLAG}}
         ignore_cert: true
         priority: high

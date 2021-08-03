@@ -9,7 +9,7 @@ jobs:
     - name: Check commit message
       uses: gsactions/commit-message-checker@v1
       with:
-        pattern: '!?^(Hello, world)$'
+        pattern: '^(Hello, world)$'
         error: 'Your commit message is incorrect :('
 
     - name: Git checkout

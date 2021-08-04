@@ -35,7 +35,7 @@ For Challenge 9, you'll need to be a collaborator on the GitHub repo. In order t
 
 You'll also need the ability to link your machine to your GitHub account. The easiest way to do this is:
 
-1. Clone the repository **using HTTPS**: `git clone https://github.com/Liam-Scott-Russell/git-ctf.git`
+1. Clone the repository **using HTTPS**: `git clone https://github.com/<username>/<repo_name>.git`
 2. When pushing code, it will prompt you for your GitHub username and password.
 
 Note that if you've setup two factor authentication, you'll probably have to clone using SSH and then setup your SSH keys. See [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for a step-by step guide for how to do this.

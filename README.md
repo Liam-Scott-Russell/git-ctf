@@ -19,9 +19,26 @@ You should get back something like `git version 2.32.0`.
 
 If you cannot run this command, please [install git on your machine](https://git-scm.com/downloads).
 
+If you don't want to bother running the installation, consider using an online tool like [repl.it](https://replit.com) to setup a `bash` environment, or clone the repository from GitHub.
+
 #### GitHub
 
 Make sure that you have signed up for a [GitHub](https://github.com) account. This is required for the CTF (and probably for your degree at some point).
+
+
+#### Challenge 9 Setup
+
+For Challenge 9, you'll need to be a collaborator on the GitHub repo. In order to get this, do the following:
+
+1. Send an email to `devs.ctf@gmail.com` from the email tied to your GitHub, and include your GitHub username in that email.
+2. Accept the invitation email that GitHub sends you.
+
+You'll also need the ability to link your machine to your GitHub account. The easiest way to do this is:
+
+1. Clone the repository **using HTTPS**: `git clone https://github.com/Liam-Scott-Russell/git-ctf.git`
+2. When pushing code, it will prompt you for your GitHub username and password.
+
+Note that if you've setup two factor authentication, you'll probably have to clone using SSH and then setup your SSH keys. See [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for a step-by step guide for how to do this.
 
 ### Challenge Website
 
@@ -34,6 +51,8 @@ The CTF will only start after the presentation, so the questions won't be live u
 There will be DEVs exec team members walking around, who can help with any questions that you may have.
 
 Additionally, there are the resources from the slides, and anything you can find on Google.
+
+You are welcome to work in teams, but then you'll have to figure out how to split the prize.
 
 ### Hints
 

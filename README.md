@@ -9,7 +9,7 @@ If you can read this, then you've probably already done most of the setup, but p
 
 #### Git
 
-To make sure that git is installed, run the following command in your terminal:
+To make sure that Git is installed, run the following command in your terminal:
 
 ```sh
 git --version

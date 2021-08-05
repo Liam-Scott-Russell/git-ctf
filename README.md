@@ -42,7 +42,7 @@ Note that if you've setup two factor authentication, you'll probably have to clo
 
 ### Challenge Website
 
-The CTF challenge will be run online at []().
+The CTF challenge will be run online at [this website](http://devs-ctf.australiaeast.azurecontainer.io:8000).
 
 The CTF will only start after the presentation, so the questions won't be live until then.
 
@@ -82,11 +82,15 @@ The different challenges have different difficulty levels, which correspond to d
 
 * The 6 "Easy" challenges are worth 2 points each
 * The 5 "Medium" challenges are worth 4 points each
-* The 3 "Hard" challenges are worth between 6 and 10 points each
+* The 3 "Hard" challenges are worth 8 points each
 
 ### Available Prizes
 
-TBD
+1st  place: Google Home Mini
+
+2nd place: DEVS Hoodie
+
+3rd place: DEVS T-Shirt
 
 ## Challenges
 
